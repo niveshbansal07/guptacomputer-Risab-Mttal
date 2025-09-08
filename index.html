@@ -1,0 +1,318 @@
+<!--
+README — Gupta Computers (Risab Mittal) Portfolio
+
+How to run locally:
+- Simply open this file (index.html) in any modern browser.
+
+How to deploy (GitHub Pages):
+- Create a public repo and push this project.
+- In GitHub, open Settings → Pages → Select branch (e.g., main) → Save.
+- Your site will be live at: https://<your-username>.github.io/<repo-name>/
+
+How to edit content quickly:
+- Update services/cards in the Services section of index.html.
+- Change phone/email/name in the Contact section and header.
+- Update styles in styles.css (CSS variables are at the top).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gupta Computers — Online Document Services | Risab Mittal</title>
+  <meta name="description" content="Trusted online document & card services — fast, secure, professional. Aadhaar/PAN/Ration/Driving Licence/Insurance/Certificates. ~8 years experience." />
+  <meta name="theme-color" content="#0B5FFF" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Gupta Computers — Online Document Services" />
+  <meta property="og:description" content="Trusted online document & card services — fast, secure, professional. ~8 years experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="assets/favicon.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Progressive enhancement: if JS disabled, smooth scroll and interactivity gracefully degrade. -->
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Gupta Computers Home">
+        <img src="assets/favicon.svg" alt="Gupta Computers logo" width="28" height="28" loading="eager" />
+        <span class="brand-text">Gupta Computers</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-animate="fade-up">
+          <h1>Gupta Computers</h1>
+          <p class="subtitle">Trusted online document & card services — fast, secure, professional. ~8 years experience.</p>
+          <div class="hero-cta">
+            <a href="#services" class="btn btn-primary">View Services</a>
+            <a href="#contact" class="btn btn-outline">Enquire Now</a>
+          </div>
+          <p class="hero-note">All services handled personally by <strong>Risab Mittal</strong>.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <!-- Subtle animated SVG accent -->
+          <img src="assets/hero-accent.svg" alt="" loading="eager" width="480" height="320" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats / Experience -->
+    <section class="section stats" aria-label="Experience and highlights">
+      <div class="container stats-grid" data-animate="fade-up">
+        <div class="stat">
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">Fast</div>
+          <div class="stat-label">Secure Processing</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Documents Assisted</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="cards" role="list">
+          <!-- Service Card Template: includes small circular logo placeholder (SVG), title, description, CTA -->
+          <article class="card" role="listitem" data-service="Aadhaar card print" data-animate="fade-up">
+            <div class="card-logo"><img src="assets/logo-placeholder.svg" width="28" height="28" alt="Service icon" loading="lazy" /></div>
+            <h3 class="card-title">Aadhaar card print</h3>
+            <p class="card-desc">Quick and clear Aadhaar card print with secure handling.</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary enquire-btn" data-service="Aadhaar card print">Enquire</button>
+              <button class="btn btn-link docs-btn" data-docs="certificates">View Docs</button>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" data-service="PAN card apply" data-animate="fade-up">
+            <div class="card-logo"><img src="assets/logo-placeholder.svg" width="28" height="28" alt="Service icon" loading="lazy" /></div>
+            <h3 class="card-title">PAN card apply</h3>
+            <p class="card-desc">End-to-end assistance for PAN card application.</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary enquire-btn" data-service="PAN card apply">Enquire</button>
+              <button class="btn btn-link docs-btn" data-docs="certificates">View Docs</button>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" data-service="Ration card apply / Parivar Register Nakal" data-animate="fade-up">
+            <div class="card-logo"><img src="assets/logo-placeholder.svg" width="28" height="28" alt="Service icon" loading="lazy" /></div>
+            <h3 class="card-title">Ration card apply / Parivar Register Nakal</h3>
+            <p class="card-desc">Support for new applications and family register extracts.</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary enquire-btn" data-service="Ration card apply / Parivar Register Nakal">Enquire</button>
+              <button class="btn btn-link docs-btn" data-docs="certificates">View Docs</button>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" data-service="Driving licence service" data-animate="fade-up">
+            <div class="card-logo"><img src="assets/logo-placeholder.svg" width="28" height="28" alt="Service icon" loading="lazy" /></div>
+            <h3 class="card-title">Driving licence service</h3>
+            <p class="card-desc">Guidance for application, renewal, or corrections.</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary enquire-btn" data-service="Driving licence service">Enquire</button>
+              <button class="btn btn-link docs-btn" data-docs="certificates">View Docs</button>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" data-service="Insurance assistance" data-animate="fade-up">
+            <div class="card-logo"><img src="assets/logo-placeholder.svg" width="28" height="28" alt="Service icon" loading="lazy" /></div>
+            <h3 class="card-title">Insurance assistance</h3>
+            <p class="card-desc">Help with policy selection and documentation.</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary enquire-btn" data-service="Insurance assistance">Enquire</button>
+              <button class="btn btn-link docs-btn" data-docs="certificates">View Docs</button>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" data-service="Cast / Domicile / Income certificate" data-animate="fade-up">
+            <div class="card-logo"><img src="assets/logo-placeholder.svg" width="28" height="28" alt="Service icon" loading="lazy" /></div>
+            <h3 class="card-title">Cast / Domicile / Income certificate</h3>
+            <p class="card-desc">Checklist and assistance for certificate application.</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary enquire-btn" data-service="Cast / Domicile / Income certificate">Enquire</button>
+              <button class="btn btn-link docs-btn" data-docs="certificates">View Docs</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documents Checklist (Accordion) -->
+    <section id="documents" class="section">
+      <div class="container">
+        <h2 class="section-title">Document checklist</h2>
+
+        <div class="accordion" data-animate="fade-up">
+          <details class="accordion-item">
+            <summary class="accordion-summary">Required documents for Cast / Domicile / Income certificate</summary>
+            <div class="accordion-content">
+              <form id="docs-form" class="docs-form" aria-label="Checklist of documents">
+                <label class="check">
+                  <input type="checkbox" name="doc" value="Aadhaar card" />
+                  <span>Aadhaar card</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="doc" value="Recent Photo" />
+                  <span>Recent Photo</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="doc" value="Ration card / Parivar Register Nakal" />
+                  <span>Ration card / Parivar Register Nakal (any one)</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="doc" value="Old certificate" />
+                  <span>Old certificate (if available)</span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="doc" value="Mobile number linked with Aadhaar" />
+                  <span>Mobile number (linked with Aadhaar)</span>
+                </label>
+
+                <div class="docs-actions">
+                  <button type="button" class="btn btn-primary" id="docs-prefill" data-service="Cast / Domicile / Income certificate">I have all documents</button>
+                </div>
+              </form>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container narrow" data-animate="fade-up">
+        <h2 class="section-title">About</h2>
+        <p><strong>Risab Mittal</strong> has been providing trusted online document and card services for over eight years under <strong>Gupta Computers</strong>. We focus on clarity, speed, and secure handling for every request.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container contact-grid" data-animate="fade-up">
+        <div class="contact-info">
+          <h2 class="section-title">Contact</h2>
+          <p>Reach out for any enquiry or to begin your application. We respond promptly.</p>
+          <ul class="contact-list">
+            <li><a href="tel:+919084493468" class="contact-link">Phone: +91-9084493468</a></li>
+            <li><a href="mailto:guptacomputers2024@gmail.com" class="contact-link">Email: guptacomputers2024@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="contact-form" novalidate>
+            <fieldset>
+              <legend>Send an enquiry</legend>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="e.g., 9084493468" pattern="^[0-9]{10}$" required />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Aadhaar card print">Aadhaar card print</option>
+                <option value="PAN card apply">PAN card apply</option>
+                <option value="Ration card apply / Parivar Register Nakal">Ration card apply / Parivar Register Nakal</option>
+                <option value="Driving licence service">Driving licence service</option>
+                <option value="Insurance assistance">Insurance assistance</option>
+                <option value="Cast / Domicile / Income certificate">Cast / Domicile / Income certificate</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your enquiry"></textarea>
+
+              <label for="file">Optional file (local only)</label>
+              <input id="file" name="file" type="file" aria-describedby="file-help" />
+              <div id="file-help" class="help-text">This file stays on your device; no upload occurs.</div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" id="print-summary" class="btn btn-outline">Download Summary</button>
+              </div>
+              <noscript>
+                <p class="help-text">JavaScript is disabled. You can still contact us via email: <a href="mailto:guptacomputers2024@gmail.com?subject=Enquiry%20-%20Gupta%20Computers">Send email</a>.</p>
+              </noscript>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Gupta Computers</strong><br />
+        by <strong>Risab Mittal</strong>
+      </div>
+      <div>
+        <a href="tel:+919084493468">+91-9084493468</a> · <a href="mailto:guptacomputers2024@gmail.com">guptacomputers2024@gmail.com</a>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#documents">Documents</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success / Error Toast -->
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <!-- Printable Summary Modal -->
+  <dialog id="summary-modal" class="summary-modal" aria-labelledby="summary-title">
+    <form method="dialog" class="summary-content">
+      <h3 id="summary-title">Service Summary</h3>
+      <div id="summary-body" class="summary-body"></div>
+      <div class="summary-actions">
+        <button class="btn btn-secondary" value="cancel">Close</button>
+        <button class="btn btn-primary" id="summary-print" value="default">Print</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none" role="img" aria-label="Decorative animated accent">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B5FFF"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="480" height="320" rx="22" fill="url(#lg)" opacity="0.06"/>
+  <g opacity="0.35">
+    <circle cx="120" cy="160" r="48" stroke="#0B5FFF" stroke-width="2">
+      <animate attributeName="r" values="44;52;44" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="240" cy="120" r="34" stroke="#06B6D4" stroke-width="2">
+      <animate attributeName="r" values="30;38;30" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="340" cy="200" r="40" stroke="#0B5FFF" stroke-width="2">
+      <animate attributeName="r" values="36;44;36" dur="7s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
+
+
